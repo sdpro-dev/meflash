@@ -1,137 +1,116 @@
 ---
-title: 'security'
+title: 'Security+ Missed Questions for Study'
 date: '2020-01-01'
 ---
+***
+***Question 20***
+***
+>> During a security audit, you discovered that customer service employees have
+been sending unencrypted confidential information to their personal email
+accounts via email. What technology could you employ to detect these
+occurrences in the future and send an alert to the appropriate security
+personnel?
 
-- text: >-
-    Question 20: Incorrect
+**Answers**:
+* SSL (Incorrect)
+* UTM (Incorrect)
+* DLP (Correct)
+* MDM
 
-    During a security audit, you discovered that customer service employees have
-    been sending unencrypted confidential information to their personal email
-    accounts via email. What technology could you employ to detect these
-    occurrences in the future and send an alert to the appropriate security
-    personnel?
-  answers:
-    - ​
-    - SSL
-    - ​
-    - UTM
-    - (Incorrect)
-    - ​
-    - DLP
-    - (Correct)
-    - ​
-    - MDM
-  explanation: >-
-    Explanation
+**Explanation:**
+* Data loss prevention (DLP) software detects potential data breaches/data
+ex-filtration transmissions and prevents them by monitoring, detecting and
+blocking sensitive data while in-use, in-motion, and at-rest. This can be
+configured to detect and alert on future occurences of this issue. Secure
+Socket Layer (SSL) is a distraction in this question since the questions
+asked about information being sent unencrypted. Using SSL, the connection
+between the client and the email server could be enrypted, but the
+information is still be sent to an employee's personal email account and
+this equates to a loss of control over the confidential data by the company.
+Mobile Device Management (MDM) software is used for the configuration and
+securing of mobile devices like smartphones and tablets. Unified Threat
+Management (UTM) is a device that combines the functions of a firewall,
+anti-malware solution, and IDS into a single piece of hardware. Some UTM's
+may the functionality of a DLP, but the answer of a DLP is a better answer
+to this question.
+---
+***
+***Question 21***
+***
+>> You have been asked to determine if one of your company’s web servers is
+vulnerable to a recently discovered attack on an old version of SSH. Which
+technique should you use to determine the current version of SSH running on
+the web server?
 
-    Data loss prevention (DLP) software detects potential data breaches/data
-    ex-filtration transmissions and prevents them by monitoring, detecting and
-    blocking sensitive data while in-use, in-motion, and at-rest. This can be
-    configured to detect and alert on future occurences of this issue. Secure
-    Socket Layer (SSL) is a distraction in this question since the questions
-    asked about information being sent unencrypted. Using SSL, the connection
-    between the client and the email server could be enrypted, but the
-    information is still be sent to an employee's personal email account and
-    this equates to a loss of control over the confidential data by the company.
-    Mobile Device Management (MDM) software is used for the configuration and
-    securing of mobile devices like smartphones and tablets. Unified Threat
-    Management (UTM) is a device that combines the functions of a firewall,
-    anti-malware solution, and IDS into a single piece of hardware. Some UTM's
-    may the functionality of a DLP, but the answer of a DLP is a better answer
-    to this question.
-- text: >-
-    Question 21: Incorrect
+**Answers**
+* Vulnerability scan​
+* Protocol analysis​
+* Passive scan
+* Banner grabbing (Correct)
 
-    You have been asked to determine if one of your company’s web servers is
-    vulnerable to a recently discovered attack on an old version of SSH. Which
-    technique should you use to determine the current version of SSH running on
-    the web server?
-  answers:
-    - ​
-    - Vulnerability scan
-    - (Incorrect)
-    - ​
-    - Protocol analysis
-    - ​
-    - Passive scan
-    - ​
-    - Banner grabbing
-    - (Correct)
-  explanation: >-
-    Explanation
+**Explanation**
+* Banner grabbing is conducted by actively connecting to the server using
+telnet or netcat and collecting the response from the web server. This
+banner usually contains the operating system being run by the server as well
+as the version number of the service (SSH) being run. This is the fastest
+and easiest way to determine the version of SSH being run on this web
+server. While it is possible to use a vulnerability scanner, protocol
+analyzer, or to conduct a passive scan to determine the version of SSH,
+these are more time consuming and not fully accurate methods to determine
+the version being run.
+---
+***
+***Question 23***
+***
+>> During your lunch break, your phone begins to receive unsolicited messages.
+What might this be an example of?
 
-    Banner grabbing is conducted by actively connecting to the server using
-    telnet or netcat and collecting the response from the web server. This
-    banner usually contains the operating system being run by the server as well
-    as the version number of the service (SSH) being run. This is the fastest
-    and easiest way to determine the version of SSH being run on this web
-    server. While it is possible to use a vulnerability scanner, protocol
-    analyzer, or to conduct a passive scan to determine the version of SSH,
-    these are more time consuming and not fully accurate methods to determine
-    the version being run.
-- text: >-
-    Question 23: Incorrect
+**Answers**
+* Packet sniffing
+* Bluesnarfing
+* Bluejacking (Correct)
+* Geotagging
 
-    During your lunch break, your phone begins to receive unsolicited messages.
-    What might this be an example of?
-  answers:
-    - ​
-    - Packet sniffing
-    - ​
-    - Bluesnarfing
-    - (Incorrect)
-    - ​
-    - Bluejacking
-    - (Correct)
-    - ​
-    - Geotagging
-  explanation: >-
-    Explanation
+**Explanation**
+* Bluejacking is the sending of unsolicited messages over Bluetooth to
+Bluetooth-enabled devices such as smartphones and tablets. Bluesnarfing, on
+the other hand, involves taking data from a smartphone or tablet over
+Bluetooth without permission. Bluetooth has a very limited range, so the
+attacker is likely within 10 meters of the victimized device. Geotagging
+involves embedded the geolocation coordinates into a piece of data (normally
+a photo or video). Packet sniffing is a passive method of collecting network
+traffic for follow-on analysis at a later time.
+---
+***
+***Question 24***
+***
+>> Tim, a help desk technician, receives a call from a frantic executive who
+states that their company issued smartphone was stolen during their lunch
+meeting with a rival company’s executive. Tim quickly checks the MDM
+administration tool and identifies that the user’s smartphone is still
+communicating with the MDM and displays the location of the device on a map.
+What should Tim do next to ensure the data on the stolen device remains
+confidential and inaccessible to the thief?
 
-    Bluejacking is the sending of unsolicited messages over Bluetooth to
-    Bluetooth-enabled devices such as smartphones and tablets. Bluesnarfing, on
-    the other hand, involves taking data from a smartphone or tablet over
-    Bluetooth without permission. Bluetooth has a very limited range, so the
-    attacker is likely within 10 meters of the victimized device. Geotagging
-    involves embedded the geolocation coordinates into a piece of data (normally
-    a photo or video). Packet sniffing is a passive method of collecting network
-    traffic for follow-on analysis at a later time.
-- text: >-
-    Question 24: Incorrect
-
-    Tim, a help desk technician, receives a call from a frantic executive who
-    states that their company issued smartphone was stolen during their lunch
-    meeting with a rival company’s executive. Tim quickly checks the MDM
-    administration tool and identifies that the user’s smartphone is still
-    communicating with the MDM and displays the location of the device on a map.
-    What should Tim do next to ensure the data on the stolen device remains
-    confidential and inaccessible to the thief?
-  answers:
-    - ​
-    - Reset the device's password
-    - ​
-    - Perform a remote wipe of the device
-    - (Correct)
-    - ​
-    - Remotely encrypt the device
-    - (Incorrect)
-    - ​
-    - Identify the IP address of the smartphone
-  explanation: >-
-    Explanation
-
-    To ensure the data remains confidential and is not accessed by the thief,
-    Tim should perform a remote wipe of the device from the MDM. This will
-    ensure any and all corporate data is erased prior to anyone accessing it.
-    Additionally, Tim could reset the device's password, but if the thief is
-    able to guess or crack the password, then they would have access to the
-    data. Identifying the IP address of the smartphone is not a useful step in
-    protecting the data on the device. Additionally, devices should be encrypted
-    BEFORE they are lost or stolen, not after, therefore the option to remotely
-    encrypt the device was provided as a wrong answer and distraction.
-- text: >-
-    Question 31: Incorrect
+**Answers**
+* Reset the device's password
+* Perform a remote wipe of the device (Correct)
+* Remotely encrypt the device
+* Identify the IP address of the smartphone
+  
+**Explanation**
+* To ensure the data remains confidential and is not accessed by the thief,
+Tim should perform a remote wipe of the device from the MDM. This will
+ensure any and all corporate data is erased prior to anyone accessing it.
+Additionally, Tim could reset the device's password, but if the thief is
+able to guess or crack the password, then they would have access to the
+data. Identifying the IP address of the smartphone is not a useful step in
+protecting the data on the device. Additionally, devices should be encrypted
+BEFORE they are lost or stolen, not after, therefore the option to remotely
+encrypt the device was provided as a wrong answer and distraction.
+---
+***
+***Question 31***
 
     You have recently been hired as a security analyst at Small Time
     Corporation. On your first day, your supervisor begins to explain the way

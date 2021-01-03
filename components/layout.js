@@ -3,8 +3,8 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
-const name = 'Christopher Ciampoli'
-export const siteTitle = 'Next.js Sample Website'
+const name = 'MGRFS - Markdown Generated React Flashcard System'
+export const siteTitle = 'MGRFS - Markdown Generated React Flashcard System'
 
 export default function Layout ({ children, home }) {
   return (
@@ -13,7 +13,7 @@ export default function Layout ({ children, home }) {
         <link rel='icon' href='/favicon.ico' />
         <meta
           name='description'
-          content='Learn how to build a personal website using Next.js'
+          content='Generate Flashcards from Markdown for Studying'
         />
         <meta
           property='og:image'
@@ -28,7 +28,7 @@ export default function Layout ({ children, home }) {
         {home ? (
           <>
             <img
-              src='/images/profile.jpg'
+              src='/images/reminder.gif'
               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
               alt={name}
             />

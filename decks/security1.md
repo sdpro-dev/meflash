@@ -90,7 +90,7 @@ meeting with a rival company’s executive. Tim quickly checks the MDM
 administration tool and identifies that the user’s smartphone is still
 communicating with the MDM and displays the location of the device on a map.
 What should Tim do next to ensure the data on the stolen device remains
-confidential and inaccessible to the thief?
+confidential and inaccessible to the thief??
 
 **Answers**
 * Reset the device's password

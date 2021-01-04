@@ -7,18 +7,17 @@ import { getSortedDecksData } from '../lib/decks';
 
 export async function getStaticProps () {
   const allDecksData = getSortedDecksData();
+  const response = await fetch('http://localhost:3000/api/users')
+  const users = await response.json()
   return {
     props: {
-      allDecksData
+      allDecksData,
+      users
     }
   }
 }
 
-Home.getInitialProps = async () => {
-
-};
-
-export default function Home ({ allDecksData }) {
+export default function Home ({ allDecksData, users }) {
   return (
     <Layout home>
       <Head>
@@ -46,6 +45,17 @@ export default function Home ({ allDecksData }) {
             </li>
           ))}
         </ul>
+      </section>
+      <section>
+      <ul>
+  {users.map(user => (
+    <li key={user.id}>
+      <Link href='/user/[id]' as={`/user/${user._id}`}>
+        <a>{`User ${user.name}`}</a>
+      </Link>
+    </li>
+  ))}
+  </ul>
       </section>
     </Layout>
   )

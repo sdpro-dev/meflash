@@ -13,6 +13,7 @@
     "date-fns": "^2.16.1",
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.2",
+    "isomorphic-unfetch": "^3.1.0",
     "mongoose": "^5.11.9",
     "next": "^10.0.0",
     "path": "^0.12.7",

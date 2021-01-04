@@ -1,18 +1,22 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import Date from '../components/date'
-import Layout, { siteTitle } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
-import { getSortedDecksData } from '../lib/decks'
+import Head from 'next/head';
+import Link from 'next/link';
+import Date from '../components/date';
+import Layout, { siteTitle } from '../components/layout';
+import utilStyles from '../styles/utils.module.css';
+import { getSortedDecksData } from '../lib/decks';
 
 export async function getStaticProps () {
-  const allDecksData = getSortedDecksData()
+  const allDecksData = getSortedDecksData();
   return {
     props: {
       allDecksData
     }
   }
 }
+
+Home.getInitialProps = async () => {
+
+};
 
 export default function Home ({ allDecksData }) {
   return (

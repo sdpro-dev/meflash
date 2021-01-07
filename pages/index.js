@@ -48,7 +48,7 @@ export default function Home ({ allDecksData, users }) {
       </section>
       <section>
       <ul>
-  {users.map(user => (
+  {users.length >= 1 ?? users.map(user => (
     <li key={user.id}>
       <Link href='/user/[id]' as={`/user/${user._id}`}>
         <a>{`User ${user.name}`}</a>
